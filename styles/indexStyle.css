@@ -45,7 +45,7 @@ h1 {
     margin: 10px; 
     position: absolute; 
     transform-style: preserve-3d; /* to make sure position is preserve in 3d */
-    z-index: 2; /* 添加定位属性以确保子元素的z-index有效 */
+    z-index: 2; 
 }
 
 .image-flipper {
@@ -91,18 +91,18 @@ h1 {
 
 
 .image-story {
-    display: none; /* 默认不显示 */
+    display: none; 
     position: absolute;
-    bottom: 120%; /* 使气泡显示在图片上方 */
-    left: 0;
+    bottom: 0; 
+    left: 120%;
     background-color: white;
     color: black;
     padding: 10px;
     border-radius: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     width: max-content;
-    max-width: 200px; /* 控制气泡最大宽度 */
-    z-index: 3; /* 确保气泡在最上层 */
+    max-width: 200px; 
+    z-index: 3; 
     text-align: left;
     font-size: 0.9em;
 }
@@ -110,11 +110,12 @@ h1 {
 .image-story::after {
     content: "";
     position: absolute;
-    top: 100%; /* 或根据需要调整来定位三角形的上下位置 */
-    left: 20px; /* 将三角形移动到气泡的左侧 */
+    top: 50%; 
+    left: -20px; 
+    margin-top: -10px;
     border-width: 10px;
     border-style: solid;
-    border-color: white transparent transparent transparent;
+    border-color: transparent transparent transparent white;
 }
 
 .do-flip .image-flipper {
@@ -122,7 +123,7 @@ h1 {
     z-index: 1;
 }
 
-/* 调整翻转动画的层级，确保它低于对话框 */
+
 .image-flipper {
     position: relative;
     z-index: 2;
