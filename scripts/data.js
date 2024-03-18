@@ -1,6 +1,6 @@
 const imageData = [
     {
-        src:'img/Seafood Market.jpg',
+        src:'img/SeaFood Market.jpg',
         title : 'Seafood Market',
         type : 'Normal',
         story : "In this dream, I wandered through a supermarket turned mystical forest, its floor a carpet of colorful chaos. The cold, blue light bathed everything, casting a surreal glow as I searched for meaning amidst the overwhelming abundance. It felt like a silent commentary on consumerism's excess."
