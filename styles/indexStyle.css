@@ -16,12 +16,13 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 1;
 }
 
 h1 {
     font-size: 4em;
-    margin: 0 0 20px; 
-    z-index: 2; /* to make sure title is at the top layer */
+    margin: 0 0 -10px; 
+    z-index: 0; /* to make sure title is at the top layer */
 }
 
 .images-container {
@@ -35,16 +36,16 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 1; /* make sure image is under title */
 }
 
 .dream-image {
     perspective: 1000px;
-    width: 100px; 
-    height: 100px; 
+    width: 150px; 
+    height: 150px; 
     margin: 10px; 
     position: absolute; 
     transform-style: preserve-3d; /* to make sure position is preserve in 3d */
+    z-index: 2; /* 添加定位属性以确保子元素的z-index有效 */
 }
 
 .image-flipper {
@@ -53,6 +54,7 @@ h1 {
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    z-index: auto;
 }
 
 .image-flipper img, .image-title {
@@ -66,6 +68,7 @@ h1 {
     right: 0;
     bottom: 0;
     margin: auto; 
+    z-index: auto;
 }
 
 .image-title {
@@ -84,4 +87,43 @@ h1 {
 
 .dream-image:hover .image-flipper {
     transform: rotateY(180deg);
+}
+
+
+.image-story {
+    display: none; /* 默认不显示 */
+    position: absolute;
+    bottom: 120%; /* 使气泡显示在图片上方 */
+    left: 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    width: max-content;
+    max-width: 200px; /* 控制气泡最大宽度 */
+    z-index: 3; /* 确保气泡在最上层 */
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.image-story::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* 或根据需要调整来定位三角形的上下位置 */
+    left: 20px; /* 将三角形移动到气泡的左侧 */
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.do-flip .image-flipper {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/* 调整翻转动画的层级，确保它低于对话框 */
+.image-flipper {
+    position: relative;
+    z-index: 2;
 }

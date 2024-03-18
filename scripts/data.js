@@ -34,5 +34,127 @@ const imageData = [
         title : 'Ghosts eyes',
         type : 'Terrifying',
         story : "In my dream, I glimpsed a darkened playroom, the only light revealing a sea of multicolored balls. This childhood haven, transformed by night, became a mysterious alcove where laughter once echoed. A sense of nostalgia mixed with an eerie quiet enveloped me as I peered in."
+    },
+
+    /* mock data under */
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
+    },
+    {
+        src:'img/Strange underground.jpg',
+        title : 'Strange underground',
+        type : 'Normal',
+        story : "I found myself in an underground station where the usual bustle was replaced by silence and oversized, colorful spheres. A sign flashed \"WAKE UP\" at an unearthly hour. It was playful yet haunting, a liminal space between reality and imagination."
     }
 ]
