@@ -107,4 +107,52 @@ const imageData = [
         type : 'Normal',
         story : "This dream sequence takes place in a nostalgic, whimsical shop where time seems to pause. The soft, hazy light gives a sense of warmth and comfort, as if the shop is a trove of treasured memories. Icons of yesteryears adorn the walls, suggesting a celebration of the past, while the inviting narrow aisle promises discoveries of quaint and curious delights. It's a comforting retreat, a dream of simpler times and cherished moments."
     },
+    {
+        src:'img/Sanctuary.jpg',
+        title : 'Sanctuary',
+        type : 'Interesting',
+        story : "Peering through the curtains into this dream, we find a cozy nook, a childhood sanctuary with a patchwork of patterns and plush companions. Soft light filters in, touching every surface with a hint of nostalgia. It's a personal haven, a realm where imagination rules and every stuffed friend has a story, a place where the whispers of make-believe still linger in the air. This dream whispers of innocence, comfort, and the pure joy of youthful days."
+    },
+    {
+        src:'img/Fish tank.jpg',
+        title : 'Fish tank',
+        type : 'Normal',
+        story : "In this aquatic dream, a cascade of tanks glow with an otherworldly light, each brimming with vibrant goldfish swirling in endless patterns. The scene has an almost hypnotic quality, each fish a fleeting thought or idea swimming through the subconscious. This is a dream of abundance and motion, a fluid tapestry of life that shimmers with simplicity and the beauty of living in the present moment."
+    },
+    {
+        src:'img/Bedroom.jpg',
+        title : 'Bedroom',
+        type : 'Normal',
+        story : "This dreamscape merges the charm of a child's bedroom with the whimsy of a flower-filled meadow. A beloved teddy bear, donning a blue bow tie, sits on a bed adorned with a floral blanket, evoking a sense of comfort and carefree days. Nearby, a carousel horse, with balloons in tow, adds a touch of fantastical joy. It's a blend of innocence and imagination, where playtime lasts forever in a field under the open sky."
+    },
+    {
+        src:'img/Dream piece.jpg',
+        title : 'Dream piece',
+        type : 'Interesting',
+        story : "This whimsical dreamscape melds a child's playground with surreal elements; vivid slides and palm trees stand against a backdrop of an iconic cityscape. Fantastical, oversized goldfish float in the sky, defying gravity and reality. It's a playful fusion where urbanity meets the boundless imagination of a child's mind, symbolizing a world where joy and color prevail, and where the wonders of the city are just a slide away."
+    },
+    {
+        src:'img/Hotel.jpg',
+        title : 'Hotel',
+        type : 'Normal',
+        story : "This surreal corridor, flooded with a soft pink glow, is a dreamscape that speaks to the subconscious. The reflection on the glossy floor suggests a different dimension, as if one could step into a deeper layer of dream. Puddles of light lead to an 'Exit' sign that glows with an otherworldly hue, offering an escape or perhaps an invitation to venture further into the maze of one's own mind. It's a hallway that bridges the known and the mysterious, wrapped in a serene, contemplative stillness."
+    },
+    {
+        src:'img/Swimming hole.jpg',
+        title : 'Swimming hole',
+        type : 'Terrifying',
+        story : "In the depths of this dream, a pool becomes a portal, its waters holding a mysterious vortex at its center. The tiles reflect a cool, nocturnal palette, while the still surface above the whirlpool holds a mesmerizing, almost gravitational pull. This scene is symbolic of the subconscious, a deep dive into the unknown depths of the mind. It invites the dreamer to surrender to the flow, to explore what lies beneath the surface in the shadowy waters of thought and emotion."
+    },
+    {
+        src:'img/Playground.jpg',
+        title : 'Playground',
+        type : 'Terrifying',
+        story : "This is a curious night scene from a dream, where gravity seems to have loosened its grip. A quaint house sits quietly, while everyday objects float mid-air, bathed in the glow of a streetlamp. A gift, an apple, and books suspended in the dark sky evoke a sense of wonder, perhaps symbolizing desires, knowledge, and rewards yet to be grounded in reality. The dream has a playful, almost whimsical quality, inviting interpretation and reflection on the gifts of the unexpected."
+    },
+    {
+        src:'img/Eye and tree.jpg',
+        title : 'Eye and tree',
+        type : 'Terrifying',
+        story : "In this enigmatic dreamscape, objects defy gravity, suspended in the night sky above a quaint village lane. A whimsical house with a glowing lamp post suggests a welcoming haven, while nearby, a gift and a wayward balloon hint at celebration or a mysterious event. The floating items, a book and floor tile, challenge the norms of reality, symbolizing the boundless and peculiar possibilities that reside in the depths of dreams."
+    },
 ]

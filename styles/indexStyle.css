@@ -10,7 +10,7 @@ body, html {
 }
 
 #main-container {
-    position: relative; /* use relative to set position */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ body, html {
 h1 {
     font-size: 4em;
     margin: 0 0 -10px; 
-    z-index: 0; /* to make sure title is at the top layer */
+    z-index: 0;
 }
 
 .images-container {
@@ -44,17 +44,15 @@ h1 {
     height: 150px; 
     margin: 10px; 
     position: absolute; 
-    transform-style: preserve-3d; /* to make sure position is preserve in 3d */
+    transform-style: preserve-3d;
     z-index: 2; 
 }
 
 .image-flipper {
     width: 100%;
     height: 100%;
-    position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    z-index: auto;
 }
 
 .image-flipper img, .image-title {
@@ -68,7 +66,6 @@ h1 {
     right: 0;
     bottom: 0;
     margin: auto; 
-    z-index: auto;
 }
 
 .image-title {
@@ -89,59 +86,20 @@ h1 {
     transform: rotateY(180deg);
 }
 
-
-.image-story {
-    display: none; 
-    position: absolute;
-    bottom: 0; 
-    left: 120%;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    width: max-content;
-    max-width: 200px; 
-    z-index: 3; 
-    text-align: left;
-    font-size: 0.9em;
-}
-
-.image-story::after {
-    content: "";
-    position: absolute;
-    top: 50%; 
-    left: -20px; 
-    margin-top: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent transparent white;
-}
-
-.do-flip .image-flipper {
-    transform: rotateY(180deg);
-    z-index: 1;
-}
-
-
-.image-flipper {
-    position: relative;
-    z-index: 2;
-}
-
 #button-container {
     position: absolute;
-    top: 20px;
+    top:20px;
     right: 20px;
-}
-
-#button-container button {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
+    }
+    
+    .filter-button {
+        margin: 0 10px;
+        cursor: pointer;
+        width: 50px; /* 或者你想要的尺寸 */
+        height: 50px; /* 或者你想要的尺寸 */
+        transition: transform 0.3s ease; /* 可选，为了点击效果 */
+    }
+    
+    .filter-button:hover {
+        transform: scale(1.1); /* 可选，鼠标悬停时放大 */
+    }

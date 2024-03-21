@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function loadImages(type) {
         const typeImages = imageData.filter(data => data.type === type);
         const radius = Math.min(Width, Height) 
-        *1.5;
+        *1.43;
 
         typeImages.forEach((data, index) => {
             // calculate x and y
