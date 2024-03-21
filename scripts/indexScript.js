@@ -1,46 +1,53 @@
 // indexScript.js
 document.addEventListener('DOMContentLoaded', (event) => {
     const imagesContainer = document.querySelector('.images-container');
-    const imageElements = []; // to store all image elements
-    const radiusX = imagesContainer.offsetWidth * 2.2;
-    const radiusY = imagesContainer.offsetHeight / 2; 
+    const buttons = ['btn-terrifying', 'btn-normal', 'btn-interesting'];
+    const Width = imagesContainer.offsetWidth;
+    const Height = imagesContainer.offsetHeight;
 
-    // construct every image elements
-    imageData.forEach((data, index) => {
-        const imageElement = document.createElement('div');
-        imageElement.className = 'dream-image';
-        imageElement.innerHTML = `
-            <div class="image-flipper">
-                <img src="${data.src}" alt="${data.title}">
-                <div class="image-title">${data.title}</div>
-            </div>
-            <div class="image-story">${data.story}</div>
-        `;
-
-        // calculate and set up position
-        const theta = (index * 2 * Math.PI) / imageData.length; // each angle
-        const x = radiusX * Math.cos(theta); 
-        const y = radiusY * Math.sin(theta); 
-        imageElement.style.transform = `translate(${x}px, ${y}px)`;
-
-        // insert element
-        imageElements.push(imageElement);
-        imagesContainer.appendChild(imageElement);
-
-        // add click event
-        imageElement.addEventListener('click', () => {
-            const descriptionEl = imageElement.querySelector('.image-story');
-
-            // switch status
-            const isShowing = descriptionEl.style.display !== 'none';
-            descriptionEl.style.display = isShowing ? 'none' : 'block';
-
-            // go through all elements, hide all image but the one clicked
-            imageElements.forEach((el) => {
-                if (el !== imageElement) {
-                    el.style.display = isShowing ? 'block' : 'none'; 
-                }
-            });
+    buttons.forEach(buttonId => {
+        document.getElementById(buttonId).addEventListener('click', (e) => {
+            // clear all image
+            imagesContainer.innerHTML = '';
+            // determine image type based on button
+            const type = buttonId.split('-')[1].charAt(0).toUpperCase() + buttonId.split('-')[1].slice(1);
+            loadImages(type);
+            // delete title
+            document.querySelector('h1').style.display = 'none';
         });
     });
+
+    function loadImages(type) {
+        const typeImages = imageData.filter(data => data.type === type);
+        const radius = Math.min(Width, Height) 
+        *1.5;
+
+        typeImages.forEach((data, index) => {
+            // calculate x and y
+            const theta = (index * 2 * Math.PI) / typeImages.length;
+            const x = radius * Math.cos(theta);
+            const y = radius * Math.sin(theta);
+
+            const imageElement = document.createElement('div');
+            imageElement.className = 'dream-image';
+            imageElement.innerHTML = `
+                <div class="image-flipper">
+                    <img src="${data.src}" alt="${data.title}">
+                    <div class="image-title">${data.title}</div>
+                </div>
+            `;
+
+            // place as circle
+            imageElement.style.transform = `translate(${x}px, ${y}px)`;
+            imagesContainer.appendChild(imageElement);
+
+            // make sure hover effect not change
+            imageElement.addEventListener('mouseenter', () => {
+                imageElement.querySelector('.image-flipper').style.transform = 'rotateY(180deg)';
+            });
+            imageElement.addEventListener('mouseleave', () => {
+                imageElement.querySelector('.image-flipper').style.transform = 'rotateY(0deg)';
+            });
+        });
+    }
 });
