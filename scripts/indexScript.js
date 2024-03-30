@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     function loadImages(type) {
+        //reset background to black
+        document.body.style.backgroundColor = 'black';
+        document.documentElement.style.backgroundColor = 'black';
+
         const typeImages = imageData.filter(data => data.type === type);
         const radius = Math.min(Width/2, Height/2);
 
@@ -56,25 +60,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function showImageAndStory(data) {
-        // clear all images
+        // set background to transparent so the image can show
+        document.body.style.backgroundColor = 'transparent';
+        document.documentElement.style.backgroundColor = 'transparent';
+
+        // set background as image
+        document.body.style.backgroundImage = `url('${data.src}')`;
+        document.body.style.backgroundSize = '100% 100%';
+
+        // clear all other image
         imagesContainer.innerHTML = '';
-        // create elements for image and story
-        const imageDiv = document.createElement('div');
+
+        // display story
         const storyDiv = document.createElement('div');
-
-        imageDiv.className = 'displayed-image';
         storyDiv.className = 'image-story';
-
-        imageDiv.innerHTML = `<img src="${data.src}" alt="${data.title}" style="width: 100%; height: auto;">`;
         storyDiv.innerHTML = `<p>${data.story}</p>`;
 
-        // layout elements
-        imagesContainer.appendChild(imageDiv);
         imagesContainer.appendChild(storyDiv);
 
-        // adjust style for layout
         imagesContainer.style.display = 'flex';
         imagesContainer.style.alignItems = 'center';
-        imagesContainer.style.justifyContent = 'space-around';
+        imagesContainer.style.justifyContent = 'center';
+        imagesContainer.style.height = '100vh';
     }
 });
