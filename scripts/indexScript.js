@@ -14,13 +14,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
             loadImages(type);
             // delete title
             document.querySelector('h1').style.display = 'none';
+            document.querySelector('h2').style.display = 'none';
         });
     });
 
     function loadImages(type) {
+        const horizon = document.querySelector('Horizon');
+        const road = document.querySelector('Road');
+        if (horizon) horizon.parentNode.removeChild(horizon);
+        if (road) road.parentNode.removeChild(road);
         //reset background to black
         document.body.style.backgroundColor = 'black';
         document.documentElement.style.backgroundColor = 'black';
+        document.body.style.backgroundImage = ``;
 
         const typeImages = imageData.filter(data => data.type === type);
         const radius = Math.min(Width/2, Height/2);
@@ -74,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // display story
         const storyDiv = document.createElement('div');
         storyDiv.className = 'image-story';
-        storyDiv.innerHTML = `<p>${data.story}</p>`;
+        storyDiv.innerHTML = `<marquee behavior="scroll" direction="up" style="height:600px;">${data.story}</marquee>`;
 
         imagesContainer.appendChild(storyDiv);
 
@@ -84,3 +90,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         imagesContainer.style.height = '100vh';
     }
 });
+
