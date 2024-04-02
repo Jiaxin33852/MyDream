@@ -221,7 +221,7 @@ h2 {
 #button-container {
     position: fixed;
     top:20px;
-    right: -700px;
+    right: -500px;
     z-index: 10;
     }
     
